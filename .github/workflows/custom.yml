@@ -109,7 +109,7 @@ on:
 env:
   FIRMWARE_AUTHOR: TurBoTse
   TOOLCHAIN: ${{ inputs.toolchain }}
-  TOOLCHAIN_URL: https://github.com/TurBoTse/padavan/releases/download/toolchain/${{ inputs.toolchain }}.tar.xz
+  TOOLCHAIN_URL: https://github.com/h70076111/padavan/releases/download/toolchain/${{ inputs.toolchain }}.tar.xz
   CONFIGFILE: trunk/configs/templates/${{ inputs.target }}.config
 
 jobs:
