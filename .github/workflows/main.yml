@@ -90,7 +90,7 @@ jobs:
         #########################################################################################
         chmod +x ./clear_tree
         sudo ./clear_tree
-        chmod +x ./build_firmware_modify $TNAME 0
+        chmod +x ./build_firmware_modify
         sudo ./build_firmware_modify $TNAME 0
         sudo mv -f images/*.trx /opt/images/
     - name : Upload packages
