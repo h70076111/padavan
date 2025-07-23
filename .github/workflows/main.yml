@@ -93,6 +93,8 @@ jobs:
         chmod +x ./build_firmware_modify
         sudo ./build_firmware_modify $TNAME 0
         sudo mv -f images/*.trx /opt/images/
+        sudo apt-get update
+        sudo apt-get install gcc-mipsel-linux-uclibc
     - name : Upload packages
       uses: actions/upload-artifact@master
       if: always()
